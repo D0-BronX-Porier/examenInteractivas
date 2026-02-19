@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-neutral-950 text-white min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="flex items-center justify-between px-8 py-6 border-b border-white/5">
+        <a href="/" class="text-xl font-bold">Alejandro Silva</a>
+
+        <div class="flex items-center gap-6 text-sm text-gray-400">
+            <span class="flex items-center gap-1 cursor-pointer hover:text-white">
+                <i class="fa-solid fa-flag"></i> Español
+            </span>
+            <span class="flex items-center gap-1 cursor-pointer hover:text-white">
+                <i class="fa-regular fa-flag"></i> Inglés
+            </span>
+        </div>
+
+        <div>
+            <input type="checkbox" class="accent-blue-500">
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="flex items-center justify-center p-4 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-7xl w-full">
+
+            <!-- HERO -->
+            <div class="md:col-span-7 rounded-3xl p-8 md:p-12 flex flex-col justify-center relative
+               bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+               border border-neutral-800
+               hover:border-blue-500/50 transition group">
+
+                <span class="text-blue-500 font-semibold tracking-widest text-sm mb-4 block">
+                    Desarrollador Full Stack Jr
+                </span>
+
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Alejandro <br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">
+                        Silva
+                    </span>
+                </h1>
+
+                <p class="text-gray-400 text-lg leading-relaxed max-w-2xl mb-10">
+                    Desarrollo de aplicaciones web/móviles con apoyo en ciberseguridad
+                </p>
+
+                <div class="flex gap-4">
+                    <button id="openContact"
+                        class="bg-blue-500 px-6 py-3 rounded-xl font-semibold hover:bg-blue-600 transition">
+                        Contáctame
+                    </button>
+
+                    <button class="border border-neutral-800 px-6 py-3 rounded-xl hover:bg-white/5 transition">
+                        Ver Proyectos
+                    </button>
+                </div>
+
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] rounded-full pointer-events-none">
+                </div>
+            </div>
+
+            <!-- STATS -->
+            <div class="md:col-span-5 rounded-3xl p-8 md:p-10 flex flex-col
+               bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+               border border-neutral-800
+               hover:border-blue-500/50 transition">
+
+                <h3 class="text-gray-500 text-xs tracking-widest uppercase mb-8">
+                    Estadísticas
+                </h3>
+
+                <div class="flex flex-col gap-8 mt-auto">
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-4xl font-bold text-cyan-400">10+</p>
+                            <p class="text-gray-500 text-xs">Proyectos Completados</p>
+                        </div>
+                        <i class="fa-solid fa-check text-cyan-400 text-xl"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-4xl font-bold text-blue-400">1+</p>
+                            <p class="text-gray-500 text-xs">Años de Experiencia</p>
+                        </div>
+                        <i class="fa-regular fa-calendar text-blue-400 text-xl"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-4xl font-bold text-indigo-400">5</p>
+                            <p class="text-gray-500 text-xs">Lenguajes Aplicables</p>
+                        </div>
+                        <i class="fa-solid fa-code text-indigo-400 text-xl"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- SECCIÓN INFERIOR -->
+    <div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- CARD PROYECTO DESTACADO -->
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden
+           bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+           border border-neutral-800 hover:border-blue-500/50 transition">
+
+            <!-- Imagen -->
+            <div class="h-52 bg-gradient-to-br from-blue-500/20 to-cyan-500/10"></div>
+
+            <div class="p-8">
+                <!-- Tech tags -->
+                <div class="flex gap-2 mb-4">
+                    <span class="text-xs px-3 py-1 rounded-full bg-blue-500/10 text-blue-400">Laravel</span>
+                    <span class="text-xs px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400">Tailwind</span>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-2">Sistema Geoespacial</h3>
+
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Desarrollo de una plataforma geointeligente para analizar enfermedades
+                    y realizar predicciones por estados de incidencia.
+                </p>
+
+                <button class="inline-flex items-center gap-2 text-sm font-semibold
+               px-5 py-3 rounded-xl
+               bg-blue-500 hover:bg-blue-600 transition">
+                    Ver Proyecto
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD STACK / LENGUAJES -->
+        <div class="lg:col-span-5 rounded-3xl p-8
+           bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+           border border-neutral-800 hover:border-blue-500/50 transition">
+
+            <h3 class="text-gray-500 text-xs tracking-widest uppercase mb-6">
+                Experiencia
+            </h3>
+
+            <div class="grid grid-cols-3 gap-6">
+
+                <div class="bg-white/5 rounded-2xl aspect-square
+           flex flex-col items-center justify-center gap-3
+           hover:bg-white/10 transition">
+                    <i class="fa-brands fa-php text-3xl text-purple-400"></i>
+                    <span class="text-gray-400 text-[10px] font-bold tracking-wider">PHP</span>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl aspect-square
+           flex flex-col items-center justify-center gap-3
+           hover:bg-white/10 transition">
+                    <i class="fa-brands fa-microsoft text-3xl text-cyan-400"></i>
+                    <span class="text-gray-400 text-[10px] font-bold tracking-wider">.NET</span>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl aspect-square
+           flex flex-col items-center justify-center gap-3
+           hover:bg-white/10 transition">
+                    <i class="fa-solid fa-c text-3xl text-blue-400"></i>
+                    <span class="text-gray-400 text-[10px] font-bold tracking-wider">C</span>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl aspect-square
+           flex flex-col items-center justify-center gap-3
+           hover:bg-white/10 transition">
+                    <i class="fa-solid fa-hashtag text-3xl text-green-400"></i>
+                    <span class="text-gray-400 text-[10px] font-bold tracking-wider">C#</span>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl aspect-square
+           flex flex-col items-center justify-center gap-3
+           hover:bg-white/10 transition">
+                    <i class="fa-solid fa-code text-3xl text-whithe-400"></i>
+                    <span class="text-gray-400 text-[10px] font-bold tracking-wider">C++</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 mt-12
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- CARD 1 -->
+        <div class="rounded-3xl p-6 flex flex-col justify-between
+           bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+           border border-neutral-800 hover:border-blue-500/50
+           transition group">
+
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-500/20
+                 flex items-center justify-center text-cyan-400">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">
+                        Proyectos
+                    </div>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Proyectos</h3>
+
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Algunos de mis proyectos destacados .
+                </p>
+            </div>
+
+            <div class="flex justify-end mt-6">
+                <i class="fa-solid fa-arrow-right text-gray-500
+               group-hover:text-blue-400
+               transition-transform group-hover:translate-x-1">
+                </i>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="rounded-3xl p-6 flex flex-col justify-between
+           bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+           border border-neutral-800 hover:border-blue-500/50
+           transition group">
+
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20
+                 flex items-center justify-center text-purple-400">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">
+                        Laboratorio
+                    </div>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Experimentos con nuevas tecnologias</h3>
+
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Experimentos con nuevas tecnologías y pruebas conceptuales.
+                </p>
+            </div>
+
+            <div class="flex justify-end mt-6">
+                <i class="fa-solid fa-arrow-right text-gray-500
+               group-hover:text-blue-400
+               transition-transform group-hover:translate-x-1">
+                </i>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="rounded-3xl p-6 flex flex-col justify-between
+           bg-[rgba(10,10,11,0.6)] backdrop-blur-xl
+           border border-neutral-800 hover:border-blue-500/50
+           transition group">
+
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/20
+                 flex items-center justify-center text-blue-400">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">
+                        Exploración
+                    </div>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Iniciativas</h3>
+
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Ideas, prototipos y desarrollos y participación social.
+                </p>
+            </div>
+
+            <div class="flex justify-end mt-6">
+                <i class="fa-solid fa-arrow-right text-gray-500
+               group-hover:text-blue-400
+               transition-transform group-hover:translate-x-1">
+                </i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MODAL CONTACTO -->
+    <div id="contactModal" class="fixed inset-0 z-50 hidden items-center justify-center
+         bg-black/70 backdrop-blur-sm">
+
+        <div class="relative w-full max-w-md mx-4
+           rounded-3xl p-8
+           bg-[rgba(10,10,11,0.9)]
+           border border-neutral-800">
+
+            <!-- Cerrar -->
+            <button id="closeContact" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="text-2xl font-bold mb-2">Contáctame</h3>
+            <p class="text-gray-400 text-sm mb-6">
+                Déjame tus datos y te responderé pronto.
+            </p>
+
+            <form id="contactForm" class="space-y-4">
+
+                <div>
+                    <label class="text-sm text-gray-400">Nombre</label>
+                    <input id="nombre" type="text" required class="w-full mt-1 px-4 py-3 rounded-xl
+                 bg-black/40 border border-neutral-800
+                 focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div>
+                    <label class="text-sm text-gray-400">Correo</label>
+                    <input type="email" id="correo" required class="w-full mt-1 px-4 py-3 rounded-xl
+                 bg-black/40 border border-neutral-800
+                 focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div>
+                    <label class="text-sm text-gray-400">Asunto</label>
+                    <input type="text" id="asunto" required class="w-full mt-1 px-4 py-3 rounded-xl
+                 bg-black/40 border border-neutral-800
+                 focus:outline-none focus:border-blue-500">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-500 py-3 rounded-xl font-semibold
+               hover:bg-blue-600 transition">
+                    Enviar
+                </button>
+
+                <button type="button" id="cancelarContact" class="w-full bg-red-500 py-3 rounded-xl font-semibold
+               hover:bg-gray-600 transition">
+                    Cancelar
+                </button>
+
+
+            </form>
+        </div>
+    </div>
+    <!--Script para q abra el modal unu-->
+    <script>
+        $(document).ready(function () {
+
+
+            $('#openContact').on('click', function () {
+                $('#contactModal')
+                    .removeClass('hidden')
+                    .addClass('flex');
+            });
+
+            $('#closeContact, #cancelarContact').on('click', function () {
+                $('#contactModal')
+                    .addClass('hidden')
+                    .removeClass('flex');
+            });
+
+
+            $('#contactModal').on('click', function (e) {
+                if (e.target.id === 'contactModal') {
+                    $(this).addClass('hidden').removeClass('flex');
+                }
+            });
+
+
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault();
+
+                const data = {
+                    nombre: $('#nombre').val(),
+                    correo: $('#correo').val(),
+                    asunto: $('#asunto').val()
+                };
+
+                $.ajax({
+                    url: 'https://diane-domesticable-eliz.ngrok-free.dev/enviar',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+
+                    success: function (response) {
+                        alert('Mensaje enviado correctamente');
+
+                        // limpiar formulario
+                        $('#contactForm')[0].reset();
+
+                        // cerrar modal
+                        $('#contactModal').addClass('hidden').removeClass('flex');
+                    },
+
+                    error: function (error) {
+                        console.error('Error:', error);
+                        alert('No se pudo enviar el mensaje');
+                    }
+                });
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+
+
+</html>
